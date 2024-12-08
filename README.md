@@ -4,4 +4,4 @@
 * Atharv Tayal
 * Dhruv Goel
 * Jitender
-* Lucky Singh
+* Lucky Singh |
