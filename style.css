@@ -45,7 +45,7 @@ body, h1, p, ul, li {
   
   /* Hero Section */
   .c2 {
-    background-image: url('images/hero.jpg');
+    background-image: url();
     background-size: cover;
     background-position: center;
     padding: 50px;
