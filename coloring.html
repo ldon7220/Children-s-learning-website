@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Coloring Game</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.color:hover {
+  transform: scale(1.2);
+}
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.part {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coloring Game</h1>
+    <div class="palette">
+      <div class="color" style="background-color: red;" data-color="red"></div>
+      <div class="color" style="background-color: blue;" data-color="blue"></div>
+      <div class="color" style="background-color: green;" data-color="green"></div>
+      <div class="color" style="background-color: yellow;" data-color="yellow"></div>
+      <div class="color" style="background-color: orange;" data-color="orange"></div>
+      <div class="color" style="background-color: purple;" data-color="purple"></div>
+    </div>
+    <div class="canvas">
+      <div class="part" style="background-color: white;" data-part="1"></div>
+      <div class="part" style="background-color: white;" data-part="2"></div>
+      <div class="part" style="background-color: white;" data-part="3"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      <div class="part" style="background-color: white;" data-part="4"></div>
+      
+
+    </div>
+  </div>
+ <script>
+    const palette = document.querySelectorAll('.color');
+const parts = document.querySelectorAll('.part');
+let selectedColor = '';
+
+palette.forEach(color => {
+  color.addEventListener('click', () => {
+    selectedColor = color.getAttribute('data-color');
+    palette.forEach(c => c.style.outline = '');
+    color.style.outline = '3px solid black';
+  });
+});
+
+parts.forEach(part => {
+  part.addEventListener('click', () => {
+    if (selectedColor) {
+      part.style.backgroundColor = selectedColor;
+    } else {
+      alert('Please select a color first!');
+    }
+  });
+});
+
+ </script>
+</body>
+</html>

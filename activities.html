@@ -4,7 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kinder Academy - Activities</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  /* Header Styling */
+  .b1 {
+    background-color: #2bafab;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .b2 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .b3 ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .b3 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .b3 a:hover {
+    background-color: #45a049;
+  }
+  .c1 h1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .c2 ul{
+   
+    padding: 50px;
+    /* text-align: center; */
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .c3 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d4dfd5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .c3:hover {
+    background-color: #c439a4;
+  }
+  
+   /* Footer */
+   /* .b7 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  } 
+   */
+  
+  </style>
 </head>
 <body>
   <header class="b1">
@@ -19,13 +108,22 @@
   </header>
 
   <main class="c1">
-    <section class="c2">
+    
       <h1>Fun Activities for Kids</h1>
+      <section class="c2">
       <ul>
+        <a href="coloring.html" class="c3">
         <li>Coloring Games</li>
-        <li>Puzzles</li>
-        <li>Memory Challenges</li>
+    </a>
+       <a href="Numbers.html " class="c3">
+        <li>Numbers</li>
+    </a>
+    <a href="alphabet.html" class="c3">
+        <li>Alphabet</li>
+    </a>
+        <a href="stories.html" class="c3">
         <li>Interactive Stories</li>
+    </a>
       </ul>
     </section>
   </main>
