@@ -1,94 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinder Academy</title>
-    <link rel="stylesheet" href="login media\login.css">
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="login media\login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="lalu">
-        <form action="page 1.html" class="enquiry">
-          <h1>Welcome to Kinder Academy</h1>
-            <h2 >Login Form For Parents</h1>
-          <div class="name">
-            <label for="fname">Enter your First Name : </label>
-            <input type="text" id="name" required/>
-            <br />
-            <label for="lname">Enter your Last Name : </label>
-            <input type="text" id="name" />
-          </div>
-          <div class="gender">
-            <label for="gender">Select Your gender : </label>
-            <br />
-            <label for="male">Male : </label>
-            <input type="radio" id="male" name="gender" />
-            <label for="female">Female : </label>
-            <input type="radio" id="female" name="gender" />
-            <label for="other">Others : </label>
-            <input type="radio" id="other" name="gender" />
-          </div>
-          <div class="email">
-            <label for="email">Enter your Email : </label>
-            <input type="email" id="email" required/>
-          </div>
-          <div class="description">
-            <label for="desc">Describe about your child :</label>
-            <br />
-            <textarea name="text" id="desc" rows="8" cols="50"> </textarea>
-          </div>
-          <div class="query">
-            <label for="querry">Choose your Question If any : </label>
-            <select name="quest" id="querry">
-              <option value="" selected>What's our charges</option>
-              <option value="">What's are the shedule</option>
-              <option value="" >
-                What's are the experience of teachers
-              </option>
-              <option value="">What's brand value</option>
-              <option value="">What's your view on AI</option>
-              <option value="">Others</option>
-            </select>
-          </div>
-          <div class="purpose">
-            <label for="pur">Purpose of visit : </label>
-            <br />
-  
-            <input type="checkbox" id="purpose1" /><label for="purpose1"
-              >Enquiry :</label
-            >
-            <br />
-  
-            <input type="checkbox" id="purpose2" />
-            <label for="purpose2">Casually :</label>
-            <br />
-  
-            <input type="checkbox" id="purpose3" /><label for="purpose3"
-              >Complain :</label
-            >
-            <br />
-  
-            <input type="checkbox" id="purpose4" />
-            <label for="purpose4">Suggestion :</label>
-          </div>
-  
-          <div class="rate">
-            <label for="ra">Rate your previous experience (Only if applicable):</label>
-            <input type="range" />
-          </div>
-  
-         
-          <div class="file">
-            <label for="file">Choose File :</label>
-            <input type="file" />
-          </div> <div class="button">
-           
-            <button type="submit">Submit</button>
-          
-            <button type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
-  
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+          <input type="tel" name="phone" placeholder="Enter your contact number" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
 </body>
 </html>
