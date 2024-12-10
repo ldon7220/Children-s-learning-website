@@ -1,41 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alphabet Display</title>
- <style>
-    body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  text-align: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
 
-.container {
-  margin-top: 50px;
-}
+        .alphabet-container {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 80%;
+        }
 
-.alphabet {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #b432b2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  line-height: 1;
- 
-}
+        .alphabet-container span {
+            font-size: 2in;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(0);
+            animation: appear 1s ease-out forwards;
+        }
 
+        /* Add a delay for each letter */
+        .alphabet-container span:nth-child(1) { animation-delay: 0s; }
+        .alphabet-container span:nth-child(2) { animation-delay: 0.3s; }
+        .alphabet-container span:nth-child(3) { animation-delay: 0.6s; }
+        .alphabet-container span:nth-child(4) { animation-delay: 0.9s; }
+        .alphabet-container span:nth-child(5) { animation-delay: 1.2s; }
+        .alphabet-container span:nth-child(6) { animation-delay: 1.5s; }
+        .alphabet-container span:nth-child(7) { animation-delay: 1.8s; }
+        .alphabet-container span:nth-child(8) { animation-delay: 2.1s; }
+        .alphabet-container span:nth-child(9) { animation-delay: 2.4s; }
+        .alphabet-container span:nth-child(10) { animation-delay: 2.7s; }
+        .alphabet-container span:nth-child(11) { animation-delay: 3s; }
+        .alphabet-container span:nth-child(12) { animation-delay: 3.3s; }
+        .alphabet-container span:nth-child(13) { animation-delay: 3.6s; }
+        .alphabet-container span:nth-child(14) { animation-delay: 3.9s; }
+        .alphabet-container span:nth-child(15) { animation-delay: 4.2s; }
+        .alphabet-container span:nth-child(16) { animation-delay: 4.5s; }
+        .alphabet-container span:nth-child(17) { animation-delay: 4.8s; }
+        .alphabet-container span:nth-child(18) { animation-delay: 5.1s; }
+        .alphabet-container span:nth-child(19) { animation-delay: 5.4s; }
+        .alphabet-container span:nth-child(20) { animation-delay: 5.7s; }
+        .alphabet-container span:nth-child(21) { animation-delay: 6s; }
+        .alphabet-container span:nth-child(22) { animation-delay: 6.3s; }
+        .alphabet-container span:nth-child(23) { animation-delay: 6.6s; }
+        .alphabet-container span:nth-child(24) { animation-delay: 6.9s; }
+        .alphabet-container span:nth-child(25) { animation-delay: 7.2s; }
+        .alphabet-container span:nth-child(26) { animation-delay: 7.5s; }
 
+        /* Animation for appearing letters */
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
- </style>
+        /* Random colors for each letter */
+        .alphabet-container span:nth-child(1) { color: red; }
+        .alphabet-container span:nth-child(2) { color: orange; }
+        .alphabet-container span:nth-child(3) { color: yellow; }
+        .alphabet-container span:nth-child(4) { color: green; }
+        .alphabet-container span:nth-child(5) { color: blue; }
+        .alphabet-container span:nth-child(6) { color: indigo; }
+        .alphabet-container span:nth-child(7) { color: violet; }
+        .alphabet-container span:nth-child(8) { color: pink; }
+        .alphabet-container span:nth-child(9) { color: brown; }
+        .alphabet-container span:nth-child(10) { color: teal; }
+        .alphabet-container span:nth-child(11) { color: coral; }
+        .alphabet-container span:nth-child(12) { color: lime; }
+        .alphabet-container span:nth-child(13) { color: cyan; }
+        .alphabet-container span:nth-child(14) { color: magenta; }
+        .alphabet-container span:nth-child(15) { color: gold; }
+        .alphabet-container span:nth-child(16) { color: silver; }
+        .alphabet-container span:nth-child(17) { color: maroon; }
+        .alphabet-container span:nth-child(18) { color: navy; }
+        .alphabet-container span:nth-child(19) { color: rgb(70, 18, 191); }
+        .alphabet-container span:nth-child(20) { color: olive; }
+        .alphabet-container span:nth-child(21) { color: lavender; }
+        .alphabet-container span:nth-child(22) { color: chocolate; }
+        .alphabet-container span:nth-child(23) { color: crimson; }
+        .alphabet-container span:nth-child(24) { color: khaki; }
+        .alphabet-container span:nth-child(25) { color: turquoise; }
+        .alphabet-container span:nth-child(26) { color: salmon; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="alphabet">Alphabet</h1>
-  </div>
-  <div class="imag">
-<img src="images/alphabet.webp" alt="">
-  </div>
+  
+    <div class="alphabet-container">
+     
+        <!-- Alphabet letters -->
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+        <span>E</span>
+        <span>F</span>
+        <span>G</span>
+        <span>H</span>
+        <span>I</span>
+        <span>J</span>
+        <span>K</span>
+        <span>L</span>
+        <span>M</span>
+        <span>N</span>
+        <span>O</span>
+        <span>P</span>
+        <span>Q</span>
+        <span>R</span>
+        <span>S</span>
+        <span>T</span>
+        <span>U</span>
+        <span>V</span>
+        <span>W</span>
+        <span>X</span>
+        <span>Y</span>
+        <span>Z</span>
+    </div>
 </body>
 </html>

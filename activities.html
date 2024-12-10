@@ -14,7 +14,7 @@
   
   body {
     background-color: #f9f9f9;
-    background-image: url(back\ 4x.jpg);
+    background-image: url(images/back\ 4x.jpg);
     background-size: 200vh;
     background-repeat: no-repeat;
   }
@@ -52,11 +52,13 @@
     background-color: #45a049;
   }
   .c1 h1{
+    position: relative;
     margin-top: 50px;
     display: flex;
     justify-content: center;
    
   }
+ 
   .c2 ul{
    
     padding: 50px;
@@ -92,9 +94,39 @@
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 300px;
-  } 
-  
+    margin-top: 300px; 
+   } 
+   .box {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute; /* Required for animations to work */
+    left: 0;
+    bottom: 0;
+    
+    /* Apply both animations correctly */
+    animation: animatex 7s linear infinite, animatey 1s ease-out infinite alternate;
+}
+
+@keyframes animatex {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%; /* Moves relative to the parent container */
+    }
+}
+
+@keyframes animatey {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 100%; /* Moves relative to the parent container */
+    }
+}
+
   
   </style>
 </head>
@@ -111,6 +143,9 @@
   </header>
 
   <main class="c1">
+    <div class="box">
+
+    </div>
     
       <h1>Fun Activities for Kids</h1>
       <section class="c2">

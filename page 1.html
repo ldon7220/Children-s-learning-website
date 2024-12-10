@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kinder Academy - Home</title>
+  
   <link rel="stylesheet" href="page1.css">
   <style>
     body, h1, p, ul, li {
@@ -19,7 +20,9 @@
   
   /* Header Styling */
   .b1 {
-    background-color: #4caf50;
+    top: 0px;
+    position: sticky;
+    background-color: #147fa9;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -124,12 +127,63 @@
  justify-content: space-between;
 
    }
+   @keyframes leftr{
+    0%{
+    opacity: 0;
+    transform: translateX(-50px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0px);
+    }
+   }
    .c0 h1{
     color: red;
+    opacity: 0;
+    animation: leftr 2s ease-out forwards ;
+    animation-delay: 1s;
+
    }
-   .l1,.l2,.l3,.l4,.l5,.l6{
-    width: 150px;
-   }
+   @keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6 {
+  width: 150px;
+  animation: dropdown 1s ease-out forwards;
+  opacity: 0; /* Initial state is hidden */
+}
+.l1 {
+  animation-delay: 1s;
+}
+
+.l2 {
+  animation-delay: 1.5s;
+}
+
+.l3 {
+  animation-delay: 2s;
+}
+
+.l4 {
+  animation-delay: 2.5s;
+}
+
+.l5 {
+  animation-delay: 3s;
+}
+
+.l6 {
+  animation-delay: 3.5s;
+}
+
    .ba2{
     
        height: 800px;
@@ -178,6 +232,9 @@
             border-left: 4px solid #4CAF50;
             max-width: 800px;
         }
+       
+       
+      
   </style>
 </head>
 <body>
@@ -194,7 +251,7 @@
   </header>
 
   <main class="c1">
-     
+  
     <div class="c0">
       <h1>Welcome to Kinder Academy!</h1>
       <p>Learn, Play, and Grow with us. Discover a world of fun and education.</p>
@@ -205,6 +262,7 @@
 
   </main>
   <main class="c4">
+   
     <div class="ba1">
         <div class="la1">
 <div class="l1">
@@ -220,7 +278,7 @@
     <h2 style="text-align: center;">Teacher Tools</h2>
     <p style="text-align:center;">
     Powerful new tools for teachers. <br>
-    <a href="#"> Learn more </a></p>
+    <a href=""> Learn more </a></p>
 </div>
 <div class="l3">
   <center>
@@ -241,7 +299,7 @@ Get support for your PreK-2nd grade classrooms. <br>
 <h2 style="text-align: center;">Research</h2>
 <p style="text-align: center;">
     Studies show Khan Academy Kids boosts pre-literacy skills. <br>
-    <a hremf="">Learn more</a> 
+    <a href="">Learn more</a> 
 </p>
 </div>
 <div class="l5">
