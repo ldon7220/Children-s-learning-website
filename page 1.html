@@ -55,27 +55,33 @@
     margin-bottom: 0;
     background-size: cover;
     background-position: center;
-    padding: 200px;
+   height: 500px;
+   width: 99vw;
     text-align: center;
     color: wheat;
     border-radius: 10px;
-    margin: 20px;
    
   }
+ 
   
   .c3 {
+   
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.244);
+    background-color: rgba(255, 255, 255, 0.847);
     color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    
+    
   }
+ 
   
   .c3:hover {
-    background-color: #45a049;
+    background-color: #c6d9c7;
+   border: 2px solid black;
   }
   
   /* Footer */
@@ -106,12 +112,19 @@
     gap: 140px;
    }
   
-   .c2{
-    height: 100%;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.244);
+   .c0{
+    height: 75%;
+    width: 100%;
+    padding-top: 80px;
+    background-color: rgba(255, 255, 255, 0.063);
   border-radius: 40px;
   margin-bottom: 0px;
+  display: flex;
+ justify-content: space-between;
+
+   }
+   .c0 h1{
+    color: red;
    }
    .l1,.l2,.l3,.l4,.l5,.l6{
     width: 150px;
@@ -151,6 +164,19 @@
     width: 310px;
     color: aliceblue;
    }
+   .testimonials {
+            padding: 50px 20px;
+            background-color: #bc9fbc;
+        }
+
+        blockquote {
+            font-size: 1.2em;
+            font-style: italic;
+            margin: 20px auto;
+            padding: 20px;
+            border-left: 4px solid #4CAF50;
+            max-width: 800px;
+        }
   </style>
 </head>
 <body>
@@ -168,9 +194,11 @@
 
   <main class="c1">
      
-    <div class="c2">
+    <div class="c0">
       <h1>Welcome to Kinder Academy!</h1>
       <p>Learn, Play, and Grow with us. Discover a world of fun and education.</p>
+     </div>
+     <div class="c2">
       <a href="activities.html" class="c3">Explore Activities</a>
     </div>
 
@@ -292,6 +320,21 @@ You’ll never see ads. You’ll never need a subscription.
 
   </div>
 </div>
+<section class="testimonials">
+    <h2>What Our users Say</h2>
+    <blockquote>
+        "Kinder academy is top-notch."
+        <footer>-Shivansh(twitter user)</footer>
+    </blockquote>
+    <blockquote>
+        "So easy to use and user friendly"
+        <footer>- Jitendar(CEO MNc)</footer>Mark Williams, O
+    </blockquote>
+    <blockquote>
+        "The consultation service was incredibly helpful in shaping your children."
+        <footer>-Shavyam(user)</footer>
+    </blockquote>
+</section>
 
   <!-- <footer class="b7">
     <p>© 2024 Kinder Academy. All rights reserved.</p>
