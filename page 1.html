@@ -128,7 +128,7 @@
 
    }
    .c4{
-    background-color: #dcdcc6;
+    background-color: rgb(221, 242, 244);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,14 +189,7 @@
 .l6 {
   animation-delay: 3.5s;
 }
-@keyframes animatey1{
-  from{
-bottom: -50%;
-  }
-  to{
-bottom: 25%;
-  }
-}
+
 @keyframes animatey2{
   from{
 bottom: 25%;
@@ -206,18 +199,6 @@ bottom: -50%;
   }
 }
 
-
-.box1 {
-  margin-left: 120px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    background-color: red;
-   position: absolute; /* Required for animations to work  */
-   left: 0;
-    bottom: 0;
-    animation: animatey1 1s ease-out infinite alternate;
-}
  
 .box2 {
   margin-left: 1300px;
@@ -230,7 +211,72 @@ bottom: -50%;
     bottom: 0;
     animation: animatey2 1s ease-out infinite alternate;
 }
- 
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start below the view */
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0); /* Fully visible */
+  }
+  30% {
+    opacity: 1; /* Stay visible */
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-50px); /* Move up and fade out */
+  }
+  100% {
+    opacity: 0; /* Stay hidden */
+  }
+}
+
+/* .image-container {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+  position: relative;
+  margin: 50px auto;
+} */
+
+.animated-image {
+  left: 90px;
+  top: 800px;
+  width: 300px; /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
+  opacity: 0; /* Start hidden */
+  position: absolute; /* Stack images on top of each other */
+  animation: slideInOut 12s ease-in-out infinite; /* Total cycle for all images */
+}
+
+/* Unique delays for sequential animations */
+.img1 {
+  animation-delay: 0s;
+}
+
+.img2 {
+  animation-delay: 2s; /* Starts after 2 seconds */
+}
+
+.img3 {
+  animation-delay: 4s; /* Starts after 4 seconds */
+}
+
+.img4 {
+  animation-delay: 6s; /* Starts after 6 seconds */
+}
+
+.img5 {
+  animation-delay: 8s; /* Starts after 8 seconds */
+}
+
+.img6 {
+  animation-delay: 10s; /* Starts after 10 seconds */
+}
+
+
    .ba2{
     
        height: 800px;
@@ -328,9 +374,15 @@ bottom: -50%;
 
   </main>
   <main class="c4">
-    <div class="box1">
-
+    <div class="image-container">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 1" class="animated-image img1">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 2" class="animated-image img2">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 3" class="animated-image img3">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 4" class="animated-image img4">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 5" class="animated-image img5">
+      <img src="images/male-student-studying-svgrepo-com (2).svg" alt="Image 6" class="animated-image img6">
     </div>
+    
     <div class="ba1">
      
         <div class="la1">
