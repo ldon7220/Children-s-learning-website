@@ -16,14 +16,18 @@
   
   body {
     background-color: #f9f9f9;
+  width: 100vw;
+  height: 100vh;
   }
   
   /* Header Styling */
   .b1 {
+  width: 100%;
+    height: 2%;
     top: 0px;
-    position: sticky;
     background-color: #147fa9;
     padding: 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,8 +41,8 @@
   
   .b3 ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
+     display: flex;
+    gap: 15px; 
   }
   
   .b3 a {
@@ -59,14 +63,16 @@
     margin-bottom: 0;
     background-size: cover;
     background-position: center;
-   height: 60vh;
-   width: 99vw;
+   height:60%;
+   width: 100%;
     text-align: center;
-    color: wheat;
-    border-radius: 10px;
-   
+    color: rgb(195, 179, 245);
+    border-radius:px;
+   /* border: 2px black; */
   }
- 
+ .c2{
+  /* border: 2px solid black; */
+ }
   
   .c3 {
    
@@ -85,7 +91,7 @@
   
   .c3:hover {
     background-color: #c6d9c7;
-   border: 2px solid black;
+   /* border: 2px solid black; */
   }
   
   /* Footer */
@@ -98,7 +104,7 @@
   } */
    .ba1{
    background-color:rgb(221, 242, 244);
-    
+    border: 2px salmon;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,22 +118,26 @@
 
    }
    .la1,.la2{
+    border:2px #333;
     display: flex;
     gap: 140px;
    }
   
    .c0{
+    border: 2px solid black;
     height: 75%;
     width: 100%;
     padding-top: 55px;
     background-color: rgba(255, 255, 255, 0.063);
-  border-radius: 40px;
+  border-radius: 0px;
   margin-bottom: 0px;
   display: flex;
  justify-content: space-between;
 
    }
    .c4{
+    border: 2px solid black;
+
     background-color: rgb(221, 242, 244);
     display: flex;
     justify-content: center;
@@ -221,7 +231,7 @@
 
 .animated-image1{
   border-radius: 40px;
- left: 20px;
+ left: 2%;
   top: 620px;
   width: 350px; /* Adjust as needed */
   height: 600px; /* Adjust as needed */
@@ -278,7 +288,7 @@
 
 .animated-image2{
   border-radius: 40px;
- left: 1150px;
+ left:75%;
   top: 620px;
   width: 350px; /* Adjust as needed */
   height: 600px; /* Adjust as needed */
@@ -315,7 +325,7 @@
 
 
    .ba2{
-    
+    border: 2px black;
        height: 800px;
       color: white;
        display: flex;
@@ -330,6 +340,7 @@
 
    }
    .demon{
+    border: 2px black;
     background-color: rebeccapurple;
     display: flex;
     justify-content: space-between;
@@ -350,6 +361,7 @@
     color: aliceblue;
    }
    .testimonials {
+    border: 2px black;
             padding: 50px 20px;
             background-color: #bc9fbc;
         }
@@ -362,28 +374,11 @@
             border-left: 4px solid #4CAF50;
             max-width: 800px;
         }
-  /* Base Styling */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-
-  .b1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #147fa9;
-    color: white;
-  }
-
-  .b3 ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-  }
     
-      
+      .testimo{
+        display: flex;
+        justify-content: center;
+      }
   </style>
 </head>
 <body>
@@ -546,10 +541,11 @@ You’ll never see ads. You’ll never need a subscription.
 
   </div>
 </div>
+<div class="testimo">
 <figure class="snip1390">
   <img src="images/male-student-studying-svgrepo-com.svg" alt="profile-sample3" class="profile" />
   <figcaption>
-    <h2>Pappu</h2>
+    <h2>Jitendar</h2>
     <h4>Student</h4>
     <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
   </figcaption>
@@ -568,7 +564,7 @@ You’ll never see ads. You’ll never need a subscription.
     <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
   </figcaption>
 </figure>
-
+</div>
   <!-- <footer class="b7">
     <p>© 2024 Kinder Academy. All rights reserved.</p>
   </footer> -->

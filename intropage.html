@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .image-slider {
+            position: relative;
+            width:80vw ;
+            height:80vh ; 
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+
+        .image-slider img{
+            position: absolute;
+            object-fit: cover;
+            border-radius: 15px;
+            opacity: 0;
+            animation: fadeInOut 8s infinite;
+        }
+        .img{
+            width: 60vw;
+            height: 80vh;
+        }
+
+        .image-slider img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .image-slider img:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .image-slider img:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        .image-slider img:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+        }
+
+    
+
+        .get-started {
+            opacity: 0;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #1420ca;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, opacity 0.5s ease;
+            animation: showButton 1s forwards;
+        }
+
+        .get-started:hover {
+            background-color: #cf92b2;
+        }
+
+        @keyframes showButton {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-slider">
+            <img src="images/col2.jpg" class="img" alt="Image 1">
+            <img src="images/col3.png" class="img" alt="Image 2">
+            <img src="images/col4.png" class="img" alt="Image 3">
+            <img src="images/col5.jpeg" class="img" alt="Image 4">
+        </div>
+        <a href="page 1.html">
+        <button class="get-started">Get Started</button>
+    </a>
+    </div>
+
+    
+</body>
+</html>
