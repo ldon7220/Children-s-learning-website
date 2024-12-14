@@ -27,7 +27,7 @@
   /* Header Styling */
   .b1 {
   width: 100%;
-    height: 2%;
+    height: 7%;
     top: 0px;
     background-color: #147fa9;
     padding: 20px;
@@ -378,6 +378,73 @@
        gap: 30px;
       
    }
+
+
+ 
+.slide {
+  position: relative;
+  top: 130px;
+  width: 400px; 
+  height:500px;
+ margin-right: 70px;
+ display: flex;
+ flex-direction: column;
+}
+
+
+
+
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start below the view */
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0); /* Fully visible */
+  }
+  30% {
+    opacity: 1; /* Stay visible */
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-50px); /* Move up and fade out */
+  }
+  100% {
+    opacity: 0; /* Stay hidden */
+  }
+}
+
+
+.imgao{
+  border-radius: 40px;
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  opacity: 0; /* Start hidden */
+  position: absolute; /* Stack images on top of each other */
+  animation: slideInOut 6s ease-in-out infinite; /* Total cycle for all images */
+}
+
+/* Unique delays for sequential animations */
+.img1 {
+  animation-delay: 0s;
+}
+
+.img2 {
+  animation-delay: 2s; /* Starts after 2 seconds */
+}
+
+.img3 {
+  animation-delay: 4s; /* Starts after 4 seconds */
+}
+
+
+
+
+
+
+
+
    .ba2 div p{
     color: #f9f9f9;
 
@@ -442,12 +509,6 @@ transform: rotate(40deg);
       .tag{
         animation: pol 1s infinite alternate;
       }
-      .video{
-        display: flex;
-        gap: 60px;
-        justify-content: center;
-      }
-
   </style>
 </head>
 <body>
@@ -552,7 +613,14 @@ family activities. <br>
     </p>
 </div>
 </div>
-    </div>
+ </div>
+<div class="slide">
+  <img src="images/kindergarten.png" alt="" class="imgao img1" >
+  <img src="images/grades123.png" alt="" class="imgao img2">
+  <img src="images/grades45.png" alt="" class="imgao img3">
+ 
+</div>
+   
   </main>
   <div class="demon">
   <div class="dem">
@@ -606,7 +674,7 @@ You’ll never see ads. You’ll never need a subscription.
 
   </div>
 </div>
-<div class="te"><h1 style="text-align: center;padding-top: 10px;">What our user's say</h1>
+<div class="te"><h1 style="text-align: center;padding-top: 10px;">What our users say</h1>
 <div class="testimo">
  
 <figure class="snip1390">
@@ -647,21 +715,8 @@ You’ll never see ads. You’ll never need a subscription.
 
 </div>
 
-
-
-
-
-
-
-
-<div class="video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds6tUxatnTs?si=IoDJE5m2B3-DIWXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  </iframe>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/lJVmwuv2XYU?si=lr7Qq-8i9PW7lap0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
   <footer class="b7"><a href="">
-    <p>Email:Kinderacdemy@gmail.com</p></a>
+   Email:Kinderacdemy@gmail.com</a>
     <p>© 2024 Kinder Academy. All rights reserved.</p>
   </footer>
 </body>
