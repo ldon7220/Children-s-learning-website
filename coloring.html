@@ -11,7 +11,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #27cee7;
 }
 
 .container {
@@ -55,11 +55,18 @@
   transition: background-color 0.3s;
   border: 1px solid black;
 }
+.bird img{
+  width: 20%;
+  height: 20%;
+}
 
 </style>
 </head>
 <body>
   <div class="container">
+    <div class="bird">
+      <img src="images/bird" alt="">
+    </div>
     <h1>Coloring Game</h1>
     <div class="palette">
       <div class="color" style="background-color: red;" data-color="red"></div>
@@ -90,33 +97,7 @@
       <div class="part" style="background-color: white;" data-part="4"></div>
       <div class="part" style="background-color: white;" data-part="4"></div>
       <div class="part" style="background-color: white;" data-part="4"></div>
-      
-
-    </div>
+     </div>
   </div>
- <script>
-    const palette = document.querySelectorAll('.color');
-const parts = document.querySelectorAll('.part');
-let selectedColor = '';
-
-palette.forEach(color => {
-  color.addEventListener('click', () => {
-    selectedColor = color.getAttribute('data-color');
-    palette.forEach(c => c.style.outline = '');
-    color.style.outline = '3px solid black';
-  });
-});
-
-parts.forEach(part => {
-  part.addEventListener('click', () => {
-    if (selectedColor) {
-      part.style.backgroundColor = selectedColor;
-    } else {
-      alert('Please select a color first!');
-    }
-  });
-});
-
- </script>
 </body>
 </html>

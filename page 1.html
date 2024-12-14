@@ -347,27 +347,10 @@
 .l6 {
   animation-delay: 3.5s;
 }
-@keyframes slideInOut {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); /* Start below the view */
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0); /* Fully visible */
-  }
-  30% {
-    opacity: 1; /* Stay visible */
-  }
-  40% {
-    opacity: 0;
-    transform: translateY(-50px); /* Move up and fade out */
-  }
-  100% {
-    opacity: 0; /* Stay hidden */
-  }
-}
 
+.pan{
+  animation: pol 1s infinite alternate;
+}
 
 
 
@@ -441,10 +424,10 @@ transform: rotate(40deg);
       }
       @keyframes pol{
         from{
-          transform: scale(0.5);
+          transform: scale(0.8);
         }
         to{
-           transform: scale(1.5);
+           transform: scale(1.2);
         }
       }
       .tag{
@@ -501,14 +484,14 @@ transform: rotate(40deg);
      
         <div class="la1">
 <div class="l1">
-    <center><img src="images/elephant-svgrepo-com.svg" width="100" height="100" alt=""></center>
+    <center><img src="images/elephant-svgrepo-com.svg" class="pan" width="100" height="100" alt=""></center>
     <h2 style="text-align: center;">Back to School</h2>
     <p style="text-align: center;"> New lessons help kids handle BIG emotions! <br>
       <a href=""> Learn more</a></p>
     
 </div>
 <div class="l2">
-<center><img src="images/tiger-svgrepo-com.svg" width="100" height="100" alt=""></center>
+<center><img src="images/tiger-svgrepo-com.svg" class="pan" width="100" height="100" alt=""></center>
 
     <h2 style="text-align: center;">Teacher Tools</h2>
     <p style="text-align:center;">
@@ -517,7 +500,7 @@ transform: rotate(40deg);
 </div>
 <div class="l3">
   <center>
-<img src="images/school-svgrepo-com.svg" width="100" height="100" alt="">
+<img src="images/school-svgrepo-com.svg" class="pan" width="100" height="100" alt="">
 </center>
 <h2 style="text-align: center;"> Schools and Districts</h2>
 <p style="text-align: center;">
@@ -529,7 +512,7 @@ Get support for your PreK-2nd grade classrooms. <br>
 <div class="la2">
 <div class="l4">
 <center>
-<img src="images/book-and-person-summer-svgrepo-com.svg" width="100" height="100" alt="">
+<img src="images/book-and-person-summer-svgrepo-com.svg" class="pan" width="100" height="100" alt="">
 </center>
 <h2 style="text-align: center;">Research</h2>
 <p style="text-align: center;">
@@ -539,7 +522,7 @@ Get support for your PreK-2nd grade classrooms. <br>
 </div>
 <div class="l5">
   <center>
-<img src="images/checklist-svgrepo-com.svg" width="100" height="100" alt="">
+<img src="images/checklist-svgrepo-com.svg" class="pan" width="100" height="100" alt="">
 </center>
 <h2 style="text-align: center;">Printables</h2>
 <p style="text-align: center;">
@@ -550,7 +533,7 @@ family activities. <br>
 </div>
 <div class="l6">
   <center>
-    <img src="images/education-filam-lession-svgrepo-com.svg" width="100" height="100" alt="">
+    <img src="images/education-filam-lession-svgrepo-com.svg" class="pan" width="100" height="100" alt="">
   </center>
     <h2 style="text-align: center;">Circle Time</h2>
     <p style="text-align: center;">
