@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
+.testimo{
+  background-color: rgb(221, 242, 244);
+}
 figure.snip1390 {
     display: inline-block;
   font-family: 'Roboto', Arial, sans-serif;
@@ -75,3 +77,43 @@ figure.snip1390 .profile {
 }
 
 
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #7848f1;
+  padding: 20px;
+ 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ 
+}
+form button {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #555;
+}
+.contact-us h2 {
+  left: 30%;
+
+}
+.contact-us{
+  background-color: rgb(219, 230, 232);
+}
+.te{
+  background-color: rgb(221, 242, 244);;
+
+}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="page1.css">
   <style>
     body, h1, p, ul, li {
+      
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -18,7 +19,7 @@
   }
   
   body {
-    background-color: #f9f9f9;
+  
   width:100%;
   height: 100%;
   }
@@ -49,6 +50,7 @@
   }
   
   .b3 a {
+    
     text-decoration: none;
     color: white;
     padding: 10px 15px;
@@ -115,10 +117,18 @@
   }
   
   .c3 {
+    clip-path:polygon(
+      0% 0%,
+      80% 0%,
+      100% 50%,
+      80% 100%,
+      0% 100%,
+      20% 50%
+       );
    box-sizing: border-box;
     display: inline-block;
     margin-top: 0px;
-    padding: 10px 20px;
+    padding:10px 45px;
     background-color: rgba(255, 255, 255, 0.847);
     color: black;
     text-decoration: none;
@@ -130,8 +140,10 @@
  
   
   .c3:hover {
-    background-color: #c6d9c7;
-   /* border: 2px solid black; */
+    
+    transform: scale(1.1);
+    background-color: #8ae38e;
+   border: 2px solid black;
   }
   
   
@@ -144,7 +156,7 @@
   }
   .logo-container {
             position: relative;
-            left: 3.5%;
+            left: 2%;
             top: 120px;
             width: 300px;
             height: 300px;
@@ -159,9 +171,9 @@
                  display: flex;
             justify-content: center;
             align-items: center;
-            /* animation: rotate2 5s linear infinite; */
+            /* animation: rotate2 5s linear infinite ; */
         }
-        @keyframes rotate2 {
+        /* @keyframes rotate2 {
           0%{
             border-color: blanchedalmond;
             background-color: #2e86de;
@@ -187,7 +199,7 @@
             background-color: #c40c8f;
             transform: rotate(360deg);
           }
-         }
+         } */
 
         .outer-ring1 {
          /* background-color: rgb(214, 228, 228); */
@@ -391,11 +403,6 @@
     width: 310px;
     color: aliceblue;
    }
-   .testimonials {
-    /* border: 2px black; */
-            padding: 50px 20px;
-            background-color: #bc9fbc;
-        }
 
         blockquote {
             font-size: 1.2em;
@@ -410,6 +417,8 @@
         position: relative;
         display: flex;
         justify-content: center;
+        padding-top: 0;
+        margin-top: 0px;
       }
       @keyframes lol{
         from{
@@ -597,13 +606,15 @@ You’ll never see ads. You’ll never need a subscription.
 
   </div>
 </div>
+<div class="te"><h1 style="text-align: center;padding-top: 10px;">What our user's say</h1>
 <div class="testimo">
+ 
 <figure class="snip1390">
   <img src="images/male-student-studying-svgrepo-com.svg" alt="profile-sample3" class="profile"  />
   <figcaption>
     <h2>Jitendar</h2>
     <h4>Student</h4>
-    <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
+    <blockquote>I really enjoyed learning on kinder academy through interactive and animated learning stories and games.</blockquote>
   </figcaption>
 </figure>
 <figure class="snip1390 hover">
@@ -611,24 +622,46 @@ You’ll never see ads. You’ll never need a subscription.
   <figcaption>
     <h2>Shivam</h2>
     <h4>Teacher</h4>
-    <blockquote>Wormwood : Calvin, how about you? Calvin : Hard to say ma'am. I think my cerebellum has just fused. </blockquote>
+    <blockquote>Kinder Academy is absolutely a good website for learning with fun and it also provide many features for teachers. </blockquote>
   </figcaption>
 </figure>
 <figure class="snip1390"><img src="images/female-lawyer-upper-body-svgrepo-com.svg" alt="profile-sample6" class="profile" />
   <figcaption>
     <h2>Sonia</h2>
     <h4>Mother</h4>
-    <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
+    <blockquote>Kinder Academy is really helpful for one to get his children learn the basic things very quickly.</blockquote>
   </figcaption>
 </figure>
 </div>
+</div>
+<div class="contact-us">
+  <section id="contact">
+    <h1 style="text-align: center; padding-top: 10px;"  >Contact us</h1>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</div>
+
+
+
+
+
+
+
+
 <div class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds6tUxatnTs?si=IoDJE5m2B3-DIWXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
   </iframe>
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/lJVmwuv2XYU?si=lr7Qq-8i9PW7lap0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-  <footer class="b7">
+  <footer class="b7"><a href="">
+    <p>Email:Kinderacdemy@gmail.com</p></a>
     <p>© 2024 Kinder Academy. All rights reserved.</p>
   </footer>
 </body>
