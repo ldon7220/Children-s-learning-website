@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background-color: #7cc6eb;
       text-align: center;
       margin: 0;
       padding: 20px;
@@ -17,9 +17,9 @@
       max-width: 600px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #dddade;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(175, 12, 12, 0.1);
     }
 
 
@@ -27,6 +27,123 @@
       font-size: 2em;
       color: #4554bf;
     }
+    .story{
+      display: flex;
+      flex-wrap:wrap;
+      gap: 30px;
+    }
+   @keyframes anima{
+      0%{
+        
+        opacity: 0.5;
+   transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0);
+      }
+    }
+    @keyframes scaler{
+      0%{
+        transform: scale(0.9);
+      }
+      100%{
+       transform: scale(1);
+      }
+    }
+    .img1,.img2,.img3,.img3,.img4{
+      animation: anima 1s ease-out forwards ,scaler 1s infinite alternate;
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+      clip-path:polygon(
+      0% 0%,
+      80% 0%,
+      100% 50%,
+      80% 100%,
+      0% 100%,
+      20% 50%
+      )
+      
+      
+    }
+    .img5{
+      animation: anima 1s ease-out forwards,scaler 1s infinite alternate;
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 90%,
+        50% 100%,
+        0% 90%,
+        20% 50%
+      );
+    }
+    .img10{
+      animation: anima 1s ease-out forwards,scaler 1s infinite alternate;
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+      clip-path: polygon(
+        0% 50%,
+        15% 0%,
+        60% 10%,
+        100% 0%,
+        100% 100%,
+        20% 100%
+      );
+    }
+    .img7,.img8,.img9,.img6{
+    animation: anima 1s ease-out forwards,scaler 1s infinite alternate;
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+      clip-path:polygon(
+      0% 50%,
+      20% 0%,
+      100% 0%,
+      80% 50%,
+      100% 100%,
+      20% 100%
+    
+      )
+      
+      
+    }
+    .img1{
+      animation-delay: 0s;
+    }
+    .img2{
+      animation-delay: 1s;
+    }
+    .img3{
+      animation-delay:2s ;
+    }
+    .img4{
+       animation-delay:3s ;
+
+    }
+    .img5{
+ animation-delay:4s ;
+    }
+    .img6{
+ animation-delay:9s ;
+    }
+    .img7{
+ animation-delay: 8s;
+    }
+    .img8{
+ animation-delay:7s ;
+    }
+    .img9{
+ animation-delay: 6s;
+    }
+    .img10{
+ animation-delay:5s ;
+    }
+   
 
      
   </style>
@@ -35,8 +152,18 @@
   <div class="story-container">
     <h1>Interactive Story for Kids</h1>
   </div>
-  <div class="story">
-<img src="images/rabbit.jpeg" alt="">
+ <div class="story">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73967.jpeg" class="img img1" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73965.jpeg" class="img img2" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73964.jpeg" class="img img3" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73963.jpeg" class="img img4" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73962.jpeg" class="img img5" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73961.jpeg" class="img img6" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73960.jpeg" class="img img7" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73959.jpeg" class="img img8" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73958.jpeg" class="img img9" alt="">
+  <img src="images/freepik__candid-image-photography-natural-textures-highly-r__73957.jpeg" class="img img10" alt="">
+ </div>
 
   </div>
 </body>
